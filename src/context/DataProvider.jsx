@@ -2,13 +2,13 @@ import { createContext, useState,React} from "react"
 
 const DataContext=createContext(null);
 const DataProvider=({children})=>{
-    const [acccount,setAcccount]=useState('');
+    const [account,setAccount]=useState('');
     return (
         <DataContext.Provider 
-         value={{acccount,setAcccount}}
+         value={{account,setAccount}}
         >
             {children}
         </DataContext.Provider>
       )
 }
- export default DataProvider;
+ export {DataProvider,DataContext};

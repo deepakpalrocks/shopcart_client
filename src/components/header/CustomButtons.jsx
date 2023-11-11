@@ -2,7 +2,7 @@ import {useState,React,useContext} from 'react'
 import {Box, Button, Typography,styled} from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LoginDialog from '../login/LoginDialog';
-import  DataContext from '../../context/DataProvider'
+import  {DataContext} from '../../context/DataProvider'
 import Profile from './Profile';
 
 const Wrapper=styled(Box)`
